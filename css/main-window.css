@@ -6,6 +6,7 @@ body {
   justify-content: center;
   background-color: #6c47e2;
   padding: 20px;
+  height: 100%;
 }
 
 .main-window {
