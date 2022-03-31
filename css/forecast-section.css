@@ -1,0 +1,35 @@
+.forecast-section {
+  padding: 15px;
+  background-color: #d1d4ff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.forecast-section h3 {
+  color: blue;
+  font-size: 12px;
+}
+
+.forecast-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.info-wrapper.-forecast {
+  background-color: #919ff8;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+}
+.info-wrapper.-forecast span {
+  font-size: 10px;
+}
+
+.info-wrapper.-forecast img {
+  height: 40px;
+  width: 40px;
+}
+.forecastMinTemp {
+  color: blue;
+}
