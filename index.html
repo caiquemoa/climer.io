@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Climer</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="main-window">
+        <header class="main-header">
+          <input
+            type="search"
+            name="search"
+            placeholder="Busque pela sua cidade"
+            id="search"
+            autocomplete="disabled"
+          />
+          <button id="button" >Pesquisar</button>
+          <span id="dateTime">Quarta, 30 Março 19:33</span>
+        </header>
+        <section class="main-section">
+          <h3 id="cityName">Montes Claros</h3>
+          <div class="degree-organizer">
+            <span id="mainTemp" class="degree">22°</span>
+            <div class="wrapper">
+              <p id="conditionText">Cloudy</p>
+              <img id="conditionIcon" src="/img/static/cloudy-day-1.svg" alt="wheather-image">
+            </div>
+          </div>
+          <div class="wheather-info">
+            <div class="wheather-traits">
+              <div class="info-wrapper">
+                <img src="/img/umbrella.svg" alt="">
+                <span id="currentPrecipitation">30%</span>
+                <p>Preciptation</p>
+              </div>
+              <div class="info-wrapper">
+                <img src="/img/water-drop.svg" alt="">
+                <span id="currentHumidity">20%</span>
+                <p>Humidity</p>
+              </div>
+              <div class="info-wrapper -third">
+                <img src="/img/wind-speed.svg" alt="">
+                <span id="currentWind">12 km/h</span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="forecast-section">
+          <h3>2-Days Forecasts</h3>
+          <div class="forecast-wrapper">
+            <div class="info-wrapper -forecast">
+              <span class="forecastWeekDay">Mon</span>
+              <img class="forecastIcon" src="/img/static/day.svg" alt="">
+              <span class="forecastMaxTemp">22°</span>
+              <span class="forecastMinTemp">16°</span>         
+            </div>
+            <div class="info-wrapper -forecast">
+              <span class="forecastWeekDay">Mon</span>
+              <img class="forecastIcon" src="/img/static/day.svg" alt="">
+              <span class="forecastMaxTemp">22°</span>
+              <span class="forecastMinTemp">16°</span>         
+            </div>
+          </div>
+        </section>
+      <div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
