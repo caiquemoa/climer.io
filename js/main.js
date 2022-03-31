@@ -5,7 +5,6 @@ const search = document.getElementById('search')
 const button = document.getElementById('button')
 
 const key = 'a3028f94c76d40369cf234124223003'
-console.log(search.value)
 wheatherLocation('pirapora')
 
 const forecastWeekDay = document.querySelectorAll('.forecastWeekDay')
@@ -54,6 +53,7 @@ function wheatherLocation(cidade) {
       console.log('error', error)
     })
 }
+
 setInterval(() => {
   let data = new Date()
 
