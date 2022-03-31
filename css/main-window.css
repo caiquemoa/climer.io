@@ -1,0 +1,17 @@
+body {
+  font-family: 'Signika Negative', sans-serif;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(252, 209, 223);
+  padding: 20px;
+}
+
+.main-window {
+  background: #d1d4ff;
+  border-radius: 25px;
+  border: 2px solid white;
+
+  /* box-shadow: 2px 2px 5px black, -2px -2px 5px black; */
+}
