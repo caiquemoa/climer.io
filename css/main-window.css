@@ -4,7 +4,7 @@ body {
 .background {
   display: flex;
   justify-content: center;
-  background-color: rgb(252, 209, 223);
+  background-color: #6c47e2;
   padding: 20px;
 }
 
