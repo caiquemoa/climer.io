@@ -1,0 +1,11 @@
+@import url(css/main-window.css);
+@import url(css/main-header.css);
+@import url(css/main-section.css);
+@import url(css/wheather-info.css);
+@import url(css/forecast-section.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
