@@ -1,0 +1,43 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px white;
+  border-bottom: 1px solid white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #919ff8;
+}
+
+.main-section h3 {
+  color: blue;
+}
+
+.degree {
+  font-size: 120px;
+  font-weight: bolder;
+  color: blue;
+}
+.degree-organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.degree-organizer img {
+  margin-top: -45px;
+  margin-right: 20px;
+}
+
+.degree-organizer p {
+  color: blue;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: -20px;
+}
