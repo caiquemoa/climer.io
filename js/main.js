@@ -16,12 +16,6 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition)
 } else wheatherLocation()
 
-function showPosition(position) {
-  console.log(position.coords.latitude, position.coords.longitude)
-  const userLocation = `${position.coords.latitude} ${position.coords.longitude}`
-  wheatherLocation(userLocation)
-}
-
 search.addEventListener('keyup', event => {
   if (event.key === 'Enter' && search.value.length > 0) {
     wheatherLocation(search.value)
@@ -45,9 +39,12 @@ function wheatherLocation(cidade = 'nova york') {
       const { temp_c, condition, precip_mm, wind_kph, humidity } =
         wheather.forecast.forecastday[0].hour[hora]
 
+      const { name, country, region } = wheather.location
+
       const { forecastday } = wheather.forecast
 
-      cityName.textContent = wheather.location.name
+      countryInfo.textContent = `${region}, ${country}`
+      cityName.textContent = name
 
       mainTemp.textContent = `${Math.floor(temp_c)}°`
 
@@ -76,6 +73,11 @@ function wheatherLocation(cidade = 'nova york') {
     .catch(error => {
       console.log('error', error)
     })
+}
+
+function showPosition(position) {
+  const userLocation = `${position.coords.latitude} ${position.coords.longitude}`
+  wheatherLocation(userLocation)
 }
 
 setInterval(() => {

@@ -10,8 +10,13 @@
   background: #919ff8;
 }
 
-.mainSection h3 {
+.mainSection p {
   color: #341933;
+}
+
+#cityName{
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 #mainTemp {
