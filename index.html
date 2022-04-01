@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><!--alert-api-conection-->
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
         />
         <button id="button" >Pesquisar</button>
         <span id="dateTime">Quarta, 30 Março 19:33</span>
-      </header>
+      </header><!--mainHeader-->
       <section class="mainSection">
         <h3 id="cityName">Montes Claros</h3>
         <div class="tempWrapper">
@@ -31,28 +31,28 @@
           <div class="conditionWrapper">
             <p id="conditionText">Cloudy</p>
             <img id="conditionIcon" src="img/cloudyday1.svg" alt="wheather image">
-          </div>
-        </div>
+          </div><!--conditionWrapper-->
+        </div><!--tempWrapper-->
         <div class="wheatherInfo">
           <div class="wheatherTraits">
             <div class="infoWrapper">
               <img src="img/umbrella.svg" alt="umbrella preciptation icon">
               <span id="currentPrecipitation">30%</span>
               <p>Preciptation</p>
-            </div>
+            </div><!--infoWrapper-->
             <div class="infoWrapper">
               <img src="img/waterdrop.svg" alt="humidity icon">
               <span id="currentHumidity">20%</span>
               <p>Humidity</p>
-            </div>
+            </div><!--infoWrapper-->
             <div class="infoWrapper -third">
               <img src="img/windspeed.svg" alt="wind icon">
               <span id="currentWind">12 km/h</span>
               <p>Wind Speed</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            </div><!--infoWrapper-->
+          </div><!--wheatherTraits-->
+        </div><!--wheatherInfo-->
+      </section> <!-- mainSection -->
       <section class="forecastSection">
         <h3>2-Days Forecasts</h3>
         <div class="forecastWrapper">
@@ -61,16 +61,16 @@
             <img class="forecastIcon" src="img/cloudyday1.svg" alt="wheather icon">
             <span class="forecastMaxTemp">22°</span>
             <span class="forecastMinTemp">16°</span>         
-          </div>
+          </div><!--infoWrapper-->
           <div class="infoWrapper -forecast">
             <span class="forecastWeekDay">Mon</span>
             <img class="forecastIcon" src="img/cloudyday1.svg" alt="wheather icon">
             <span class="forecastMaxTemp">22°</span>
             <span class="forecastMinTemp">16°</span>         
-          </div>
-        </div>
-      </section>
+          </div> <!--infoWrapper-->
+        </div><!--forecastWrapper-->
+      </section><!-- forecastSection -->
     <div>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script><!--js script-->
   </body>
 </html>
