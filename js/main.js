@@ -4,8 +4,6 @@ const hora = data.getHours() // 0-23
 
 const forecastLength = 7
 
-wheatherLocation()
-
 const forecastWeekDay = document.querySelectorAll('.forecastWeekDay')
 
 const forecastIcon = document.querySelectorAll('.forecastIcon')
@@ -13,6 +11,16 @@ const forecastIcon = document.querySelectorAll('.forecastIcon')
 const maxTemp = document.querySelectorAll('.forecastMaxTemp')
 
 const minTemp = document.querySelectorAll('.forecastMinTemp')
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(showPosition)
+} else wheatherLocation()
+
+function showPosition(position) {
+  console.log(position.coords.latitude, position.coords.longitude)
+  const userLocation = `${position.coords.latitude} ${position.coords.longitude}`
+  wheatherLocation(userLocation)
+}
 
 search.addEventListener('keyup', event => {
   if (event.key === 'Enter' && search.value.length > 0) {
