@@ -1,35 +1,37 @@
-.forecast-section {
+.forecastSection {
   padding: 15px;
   background-color: #d1d4ff;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 
-.forecast-section h3 {
-  color: blue;
+.forecastSection h3 {
+  color: #341933;
   font-size: 12px;
 }
 
-.forecast-wrapper {
+.forecastWrapper {
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
 
-.info-wrapper.-forecast {
+.infoWrapper.-forecast {
   background-color: #919ff8;
   border-radius: 30px;
   padding: 15px;
   color: white;
 }
-.info-wrapper.-forecast span {
+
+.infoWrapper.-forecast span {
   font-size: 10px;
 }
 
-.info-wrapper.-forecast img {
+.infoWrapper.-forecast img {
   height: 40px;
   width: 40px;
 }
+
 .forecastMinTemp {
-  color: blue;
+  color: #341933;
 }

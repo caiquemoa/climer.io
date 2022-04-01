@@ -12,67 +12,65 @@
     <title>Climer</title>
   </head>
   <body>
-    <div class="background">
-      <div class="main-window">
-        <header class="main-header">
-          <input
-            type="search"
-            name="search"
-            placeholder="Busque pela sua cidade"
-            id="search"
-            autocomplete="disabled"
-          />
-          <button id="button" >Pesquisar</button>
-          <span id="dateTime">Quarta, 30 Março 19:33</span>
-        </header>
-        <section class="main-section">
-          <h3 id="cityName">Montes Claros</h3>
-          <div class="degree-organizer">
-            <span id="mainTemp" class="degree">22°</span>
-            <div class="wrapper">
-              <p id="conditionText">Cloudy</p>
-              <img id="conditionIcon" src="/img/cloudy-day-1.svg" alt="wheather-image">
+    <div class="mainWindow">
+      <header class="mainHeader">
+        <input
+          type="search"
+          name="search"
+          placeholder="Busque pela sua cidade"
+          id="search"
+          autocomplete="disabled"
+        />
+        <button id="button" >Pesquisar</button>
+        <span id="dateTime">Quarta, 30 Março 19:33</span>
+      </header>
+      <section class="mainSection">
+        <h3 id="cityName">Montes Claros</h3>
+        <div class="tempWrapper">
+          <span id="mainTemp">22°</span>
+          <div class="conditionWrapper">
+            <p id="conditionText">Cloudy</p>
+            <img id="conditionIcon" src="img/cloudyday1.svg" alt="wheather image">
+          </div>
+        </div>
+        <div class="wheatherInfo">
+          <div class="wheatherTraits">
+            <div class="infoWrapper">
+              <img src="img/umbrella.svg" alt="umbrella preciptation icon">
+              <span id="currentPrecipitation">30%</span>
+              <p>Preciptation</p>
+            </div>
+            <div class="infoWrapper">
+              <img src="img/waterdrop.svg" alt="humidity icon">
+              <span id="currentHumidity">20%</span>
+              <p>Humidity</p>
+            </div>
+            <div class="infoWrapper -third">
+              <img src="img/windspeed.svg" alt="wind icon">
+              <span id="currentWind">12 km/h</span>
+              <p>Wind Speed</p>
             </div>
           </div>
-          <div class="wheather-info">
-            <div class="wheather-traits">
-              <div class="info-wrapper">
-                <img src="img/umbrella.svg" alt="umbrella preciptation icon">
-                <span id="currentPrecipitation">30%</span>
-                <p>Preciptation</p>
-              </div>
-              <div class="info-wrapper">
-                <img src="img/waterdrop.svg" alt="water humidity icon">
-                <span id="currentHumidity">20%</span>
-                <p>Humidity</p>
-              </div>
-              <div class="info-wrapper -third">
-                <img src="img/windspeed.svg" alt="wind icon">
-                <span id="currentWind">12 km/h</span>
-                <p>Wind Speed</p>
-              </div>
-            </div>
+        </div>
+      </section>
+      <section class="forecastSection">
+        <h3>2-Days Forecasts</h3>
+        <div class="forecastWrapper">
+          <div class="infoWrapper -forecast">
+            <span class="forecastWeekDay">Mon</span>
+            <img class="forecastIcon" src="img/cloudyday1.svg" alt="wheather icon">
+            <span class="forecastMaxTemp">22°</span>
+            <span class="forecastMinTemp">16°</span>         
           </div>
-        </section>
-        <section class="forecast-section">
-          <h3>2-Days Forecasts</h3>
-          <div class="forecast-wrapper">
-            <div class="info-wrapper -forecast">
-              <span class="forecastWeekDay">Mon</span>
-              <img class="forecastIcon" src="/img/static/day.svg" alt="wheathe icon">
-              <span class="forecastMaxTemp">22°</span>
-              <span class="forecastMinTemp">16°</span>         
-            </div>
-            <div class="info-wrapper -forecast">
-              <span class="forecastWeekDay">Mon</span>
-              <img class="forecastIcon" src="/img/static/day.svg" alt="wheathe icon">
-              <span class="forecastMaxTemp">22°</span>
-              <span class="forecastMinTemp">16°</span>         
-            </div>
+          <div class="infoWrapper -forecast">
+            <span class="forecastWeekDay">Mon</span>
+            <img class="forecastIcon" src="img/cloudyday1.svg" alt="wheather icon">
+            <span class="forecastMaxTemp">22°</span>
+            <span class="forecastMinTemp">16°</span>         
           </div>
-        </section>
-      <div>
-    </div>
+        </div>
+      </section>
+    <div>
     <script src="js/main.js"></script>
   </body>
 </html>

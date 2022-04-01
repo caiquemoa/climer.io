@@ -1,7 +1,5 @@
 body {
   font-family: 'Signika Negative', sans-serif;
-}
-.background {
   display: flex;
   justify-content: center;
   background-color: #6c47e2;
@@ -9,10 +7,12 @@ body {
   height: 100vh;
 }
 
-.main-window {
+.mainWindow {
   background: #d1d4ff;
   border-radius: 25px;
   border: 2px solid white;
+  max-width: 320px;
+  height: fit-content;
 
   /* box-shadow: 2px 2px 5px black, -2px -2px 5px black; */
 }

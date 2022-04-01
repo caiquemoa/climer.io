@@ -1,34 +1,38 @@
-.wheather-info {
+.wheatherInfo {
   padding: 10px 40px;
   border-radius: 50px;
   background-color: #ced2ff;
   margin-top: 20px;
-  color: blue;
 }
 
-.wheather-traits {
+.wheatherTraits {
   display: flex;
   column-gap: 20px;
 }
-.info-wrapper {
+
+.infoWrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   row-gap: 3px;
 }
 
-.info-wrapper img {
+.infoWrapper img {
   height: 20px;
   width: 20px;
 }
-.infowrapper.-third img {
+
+.infoWrapper.-third img {
   margin-left: 15px;
 }
 
-.info-wrapper span {
+.infoWrapper span {
+  color: #341933;
   font-size: 14px;
   font-weight: bolder;
 }
-.info-wrapper p {
+
+.infoWrapper p {
+  color: #341933;
   font-size: 10px;
 }
