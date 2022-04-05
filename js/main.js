@@ -14,6 +14,7 @@ const minTemp = document.querySelectorAll('.forecastMinTemp')
 
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition)
+  console.log(showPosition)
 } else wheatherLocation()
 
 search.addEventListener('keyup', event => {
@@ -77,6 +78,7 @@ function wheatherLocation(cidade = 'nova york') {
 
 function showPosition(position) {
   const userLocation = `${position.coords.latitude} ${position.coords.longitude}`
+  console.log(userLocation)
   wheatherLocation(userLocation)
 }
 
