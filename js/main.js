@@ -78,7 +78,7 @@ function wheatherLocation(cidade = 'nova york') {
 
 function showPosition(position) {
   const userLocation = `${position.coords.latitude} ${position.coords.longitude}`
-  console.log(userLocation)
+
   coordsInfo.textContent = `${position.coords.latitude} ${position.coords.longitude}`
   wheatherLocation(userLocation)
 }
